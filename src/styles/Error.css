@@ -1,0 +1,58 @@
+.container_error {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error_number {
+    font-weight: 700;
+    font-size: 288px;
+    text-align: center;
+    color: #FF6060;
+    margin-top: 56px;
+}
+
+.error_text {
+    text-align: center;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+
+}
+
+.text_return {
+    text-align: center;
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 182px;
+    margin-bottom: 159px;
+    text-decoration: underline;
+}
+
+/* *****\ ♦ Responsive design ♦ \***** */
+
+@media screen and (max-width: 748px) {
+
+    .error_number {
+        font-size: 96px;
+        margin-top: 176px;
+    }
+
+    .error_text {
+        font-size: 18px;
+        margin-top: 4px;
+        line-height: 142.6%;
+    }
+
+    .text_return {
+        font-size: 14px;
+        margin-top: 138px;
+        margin-bottom: 228px;
+    }
+}

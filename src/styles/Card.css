@@ -1,0 +1,203 @@
+.container_card {
+    margin-top: 310px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 1240px;
+    max-width: 95%;
+    background: #F7F7F7;
+    border-radius: 25px;
+}
+
+.box_card {
+    list-style-type: none;
+    padding: 56px 50px 56px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.gradient-overlay {
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    background-size: cover;
+    cursor: pointer;
+
+    -webkit-transition: all 300ms ease-in-out;
+    -webkit-transform: scale(1);
+    -ms-transition: all 300ms ease-in-out;
+    -ms-transform: scale(1);
+    -moz-transition: all 300ms ease-in-out;
+    -moz-transform: scale(1);
+    transition: all 300ms ease-in-out;
+    transform: scale(1);
+}
+
+.gradient-overlay::before {
+    content: " ";
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    z-index: 10;
+}
+
+.gradient-overlay:hover {
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.500);
+    -webkit-transition: all 300ms ease-in-out;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 300ms ease-in-out;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 300ms ease-in-out;
+    -moz-transform: scale(1.05);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+}
+
+.card-cover {
+    background-size: cover;
+    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+}
+
+.logement-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.title-card {
+    position: absolute;
+    z-index: 20;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    margin: 268px 20px 20px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* *****\ ♦ Responsive design ♦ \***** */
+
+@media screen and (max-width: 1305px) {
+    .box_card {
+        justify-content: center;
+        gap: 6%;
+    }
+
+    .gradient-overlay {
+        width: 100%;
+        height: 255px;
+        margin-bottom: 45px;
+    }
+
+    .gradient-overlay::before {
+        width: 100%;
+        height: 255px;
+        margin-bottom: 30px;
+    }
+
+    .card-cover {
+        max-width: 364px;
+        width: 100%;
+        height: 255px;
+        margin-bottom: 30px;
+    }
+
+    .title-card {
+        margin: 46.73% 5.88% 5.88% 5.88%;
+    }
+}
+
+/*===========================================================================*/
+
+@media screen and (max-width: 983px) {
+    .container_card {
+        display: flex;
+        width: auto;
+        max-width: 100%;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .box_card {
+        padding: 50px 0px 50px 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+        gap: 20px;
+    }
+
+    .gradient-overlay {
+        margin-bottom: 0px;
+    }
+
+    .gradient-overlay::before {
+        margin-bottom: 0px;
+    }
+
+    .card-cover {
+        margin-bottom: 0px;
+    }
+
+    .title-card {
+        margin: 53.73% 5.88% 5.88% 5.88%;
+    }
+}
+
+/*===========================================================================*/
+
+@media screen and (max-width: 848px) {
+
+    .gradient-overlay {
+        height: 190px;
+    }
+
+    .gradient-overlay::before {
+        height: 190px;
+    }
+
+    .card-cover {
+        max-width: 285px;
+        height: 190px;
+    }
+}
+
+/*===========================================================================*/
+
+@media screen and (max-width: 672px) {
+    .container_card {
+        background: none;
+        margin-top: 112px;
+    }
+
+    .box_card {
+        padding: 22px 0px 40px 0px;
+    }
+
+    .gradient-overlay {
+        height: 255px;
+    }
+
+    .gradient-overlay::before {
+        height: 255px;
+    }
+
+    .card-cover {
+        max-width: 383px;
+        height: 255px;
+    }
+}

@@ -1,0 +1,93 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+    max-width: 95%;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+nav a {
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    margin: 0;
+    text-decoration-line: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    /*position menu nav */
+    padding: 57px 0px 0px 57px;
+}
+
+nav ul li:hover {
+    /* hover pour Barre Overline menu nav */
+    text-decoration-line: underline;
+}
+
+/* *****\ ♦ Responsive design ♦ \***** */
+
+@media screen and (max-width: 672px) {
+    .Header {
+        width: 90%;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    nav ul li {
+        /*position menu nav */
+        padding: 38px 0px 0px 15px;
+    }
+
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        width: 145px;
+        height: 47px;
+    }
+
+    .container_card {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        /*position menu nav */
+        padding: 40px 0px 0px 15px;
+        margin-right: 2%;
+    }
+}

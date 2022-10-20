@@ -1,0 +1,73 @@
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.background-banner {
+    position: absolute;
+    z-index: 1;
+    top: 171px;
+    max-width: 95%;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.background-opacity {
+    position: absolute;
+    z-index: 2;
+    top: 171px;
+    max-width: 95%;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.title-banner {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    top: 249px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    max-width: 100%;
+    color: #ffffff;
+    left: 7%;
+    right: 7%;
+}
+
+/* *****\ ♦ Responsive design ♦ \***** */
+
+@media screen and (max-width: 672px) {
+
+    .background-banner,
+    .background-opacity {
+        max-width: 90%;
+        height: 111px;
+        top: 83px;
+        border-radius: 10px;
+    }
+
+    .background-opacity {
+        background: #000000;
+        mix-blend-mode: darken;
+        opacity: 0.4;
+    }
+
+    .title-banner {
+        text-align: left;
+        left: 9.6%;
+        right: 30%;
+        top: 114px;
+        font-size: 24px;
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .background-banner {
+        content: url("../images/M_Home.png");
+    }
+}
