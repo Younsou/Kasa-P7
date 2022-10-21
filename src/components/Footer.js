@@ -2,6 +2,8 @@ import React from 'react'
 import LOGO_white from '../images/LOGO_white.svg'
 import '../styles/Footer.css'
 
+// ==============================================================
+
 function Footer() {
     return (
         <div className='footer'>

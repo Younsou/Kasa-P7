@@ -1,7 +1,9 @@
-import React from 'react';
-import AppartementList from '../models/logements.json';
-import Card from '../components/Card';
-import '../styles/Card.css';
+import React from 'react'
+import AppartementList from '../models/logements.json'
+import Card from '../components/Card'
+import '../styles/Card.css'
+
+// ==============================================================
 
 function ListCard() {
     return (
@@ -15,4 +17,5 @@ function ListCard() {
         </div >
     )
 }
+
 export default ListCard

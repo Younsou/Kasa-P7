@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Avatar.css'
 
-// -------------------------------------------
+// ==============================================================
 
 function Avatar(props) {
     return (
@@ -15,4 +15,5 @@ function Avatar(props) {
         </div>
     )
 }
+
 export default Avatar

@@ -1,8 +1,12 @@
 .tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background: #FF6060;
     border-radius: 10px;
-    width: 115px;
+    min-width: 105px;
     height: 25px;
+    padding: 0 10px;
     margin-right: 10px;
     margin-top: 20px;
 }
@@ -14,16 +18,21 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    margin-top: 3px;
 }
 
-@media (max-width: 375px) {
-    .tag-name {
+@media (max-width: 652px) {
+    .tag {
+        display: flex;
+        border-radius: 5px;
+        min-width: 77px;
+        height: 18px;
+        padding: 0 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .tag-content {
         width: 87px;
-        height: 23.5px;
-        text-align: center;
-        align-items: center;
         font-size: 10px;
-        line-height: 8px;
     }
 }

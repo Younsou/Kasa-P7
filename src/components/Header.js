@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import LOGO_Red from '../images/LOGO_Red.svg'
 import '../styles/Header.css'
 
+// ==============================================================
+
 function Navigation() {
     return (
         <div className='Header'>

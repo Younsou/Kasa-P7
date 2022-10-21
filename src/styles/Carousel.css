@@ -29,6 +29,7 @@
 .chevron {
     width: 30px !important;
     height: auto !important;
+    cursor: pointer;
 }
 
 .carousel-idx {

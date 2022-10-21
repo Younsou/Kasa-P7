@@ -3,7 +3,7 @@ import ChevronLeft from '../images/chevron_left.png'
 import ChevronRight from '../images/chevron_right.png'
 import '../styles/Carousel.css'
 
-
+// ==============================================================
 
 function Carousel(props) {
     const [slideIdx, setSlideIdx] = useState(0);
@@ -33,8 +33,14 @@ function Carousel(props) {
 
     return (
         <div className="carousel">
-            <div className="carousel-container" style={{ transform: `translateX(-${slideIdx * imgSize()}px)` }}>
-                {props.img.map((picture) => < img className='carousel-container-img' src={picture} key={picture} alt='photos-logement' />)}
+            <div className="carousel-container"
+                style={{ transform: `translateX(-${slideIdx * imgSize()}px)` }}>
+                {props.img.map((picture) =>
+                    < img className='carousel-container-img'
+                        src={picture}
+                        key={picture}
+                        alt='photos-logement' />
+                )}
             </div>
             <div className={'carousel-controls'}>
                 <img src={ChevronLeft} alt="chevron-left" className={'chevron'} onClick={onPrev} />

@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'
 import '../styles/Tag.css'
+
+// ==============================================================
 
 function Tag(props) {
     return (

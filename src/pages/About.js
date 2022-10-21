@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from '../components/Banner'
 
-
+// ==============================================================
 
 function About() {
   return (
@@ -18,4 +18,5 @@ function About() {
     </div>
   )
 }
+
 export default About

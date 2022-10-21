@@ -1,8 +1,23 @@
-# Getting Started with Create React App
+## Kasa - Use React to create a web app
+Project 7 of OpenClassrooms's JavaScript React Developer program
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of content
+Getting Started
+Prerequisites
+Launching the project
+Scripts
+Built With
+## Prerequisites
 
-## Available Scripts
+[NodeJS]
+[npm] or [Yarn]
+
+## Launching the project
+
+1.Use `npm i` or `yarn` to download node modules in the directory
+
+2.Use `npm start` or `yarn start` to run the project (see Scripts for other options)
+## Scripts
 
 In the project directory, you can run:
 

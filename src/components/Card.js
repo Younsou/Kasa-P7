@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../styles/Card.css'
 
+// ==============================================================
+
 const Card = ({ logement }) => {
     return (
         <NavLink to={`FicheItem/${logement.id}`}>
@@ -14,7 +16,7 @@ const Card = ({ logement }) => {
                 </h2>
             </li>
         </NavLink>
-    );
-};
+    )
+}
 
-export default Card;
+export default Card

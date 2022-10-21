@@ -3,6 +3,8 @@ import '../styles/Banner.css'
 import Background_opacity from '../images/Background_opacity.png'
 import background from '../images/Background_Home.png'
 
+// ==============================================================
+
 function Banner() {
     return (
         <div className='banner'>
@@ -12,4 +14,5 @@ function Banner() {
         </div>
     )
 }
+
 export default Banner

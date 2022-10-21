@@ -7,7 +7,7 @@ import Error from './pages/Error'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-
+// ==============================================================
 
 const App = () => {
   return (
@@ -24,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App

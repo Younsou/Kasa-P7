@@ -9,6 +9,7 @@ import { ReactComponent as Stars } from '../images/star_Grey.svg'
 import Collapse from "../components/Collapse"
 import '../styles/FicheItem.css'
 
+// ==============================================================
 
 function FicheItem() {
     const [logement, setLogement] = useState({ tags: [], equipments: [], pictures: [], rating: '', host: { 'name': '', 'picture': '' } })
@@ -29,7 +30,6 @@ function FicheItem() {
     }
 
     return (
-
         <main className='logement'>
             <div className='carousel-logement'>
                 <Carousel img={logement.pictures} />

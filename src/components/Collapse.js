@@ -2,8 +2,7 @@ import React, { useState, useRef } from "react"
 import Chevron from '../images/small_chevron.png'
 import '../styles/Collapse.css'
 
-
-// --------------------------------------------------------------
+// ==============================================================
 
 function Collapse(props) {
     const [setActive, setActiveState] = useState("")
@@ -38,4 +37,5 @@ function Collapse(props) {
         </div>
     )
 }
+
 export default Collapse

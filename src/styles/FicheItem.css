@@ -72,7 +72,13 @@
 
 .collapse-container {
     display: flex;
-    margin-top: 10px;
     margin-bottom: 110px;
     justify-content: space-between;
+}
+
+@media (max-width: 1238px) {
+    .collapse-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
