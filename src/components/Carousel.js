@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import ChevronLeft from '../images/chevron_left.png'
-import ChevronRight from '../images/chevron_right.png'
+import ChevronLeft from '../images/chevron_left.svg'
+import ChevronRight from '../images/chevron_right.svg'
 import '../styles/Carousel.css'
 
 // ==============================================================

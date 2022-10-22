@@ -10,16 +10,7 @@
     max-width: 95%;
     height: 223px;
     border-radius: 25px;
-    object-fit: cover;
-}
-
-.background-opacity {
-    position: absolute;
-    z-index: 2;
-    top: 171px;
-    max-width: 95%;
-    height: 223px;
-    border-radius: 25px;
+    filter: brightness(70%);
     object-fit: cover;
 }
 
@@ -42,18 +33,11 @@
 
 @media screen and (max-width: 672px) {
 
-    .background-banner,
-    .background-opacity {
+    .background-banner {
         max-width: 90%;
         height: 111px;
         top: 83px;
         border-radius: 10px;
-    }
-
-    .background-opacity {
-        background: #000000;
-        mix-blend-mode: darken;
-        opacity: 0.4;
     }
 
     .title-banner {
@@ -69,5 +53,19 @@
 @media screen and (max-width: 375px) {
     .background-banner {
         content: url("../images/M_Home.png");
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .background-banner {
+        top: 145px;
+    }
+
+    .background-opacity {
+        top: 145px;
+    }
+
+    .title-banner {
+        top: 165px;
     }
 }

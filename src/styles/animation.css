@@ -1,0 +1,18 @@
+.about__page .collapse {
+
+    animation-duration: 1500ms;
+    animation-delay: 5ms;
+    animation-name: glissement;
+}
+
+@keyframes glissement {
+    from {
+        margin-bottom: 35%;
+        opacity: 0;
+    }
+
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}

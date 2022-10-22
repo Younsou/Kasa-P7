@@ -1,9 +1,9 @@
 .carousel {
     overflow: hidden;
-    max-width: 1240px;
-    width: 95%;
     margin: auto;
     position: relative;
+    max-width: 1240px;
+    width: 95%;
 }
 
 .carousel-container {
@@ -13,6 +13,7 @@
 
 .carousel-container-img {
     flex-shrink: 0;
+
 }
 
 .carousel-controls {
@@ -41,11 +42,19 @@
     font-weight: bold;
 }
 
+@media (max-width: 672px) {
+    .carousel {
+        width: 90%;
+    }
+}
 
-@media (max-width: 375px) {
-
+@media (max-width: 478px) {
     .carousel-idx {
         display: none;
+    }
+
+    .chevron {
+        width: 19.8px !important;
     }
 
 }

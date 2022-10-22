@@ -24,19 +24,16 @@
     display: flex;
     align-items: flex-end;
     text-align: right;
-
     color: #FF6060;
     margin-right: 10px;
 }
 
-@media (max-width: 375px) {
+/* *****\ ♦ Responsive design ♦ \***** */
 
+@media (max-width: 478px) {
     .avatar-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        margin-right: -40%;
+        margin-top: 18px;
+        margin-bottom: 16.5px;
     }
 
     .avatar-main img {
@@ -44,22 +41,8 @@
         height: 32px
     }
 
-    .avatar-name p {
-        left: 0%;
-        right: 31.37%;
-        top: 0%;
-        bottom: 0%;
-
-        font-family: "Montserrat", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 142.6%;
-        /* or 17px */
-
-        display: flex;
-        align-items: flex-end;
-        text-align: right;
-        margin-left: 50px;
+    .avatar-name {
+        font-size: 12px;
+        margin: 0;
     }
 }

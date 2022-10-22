@@ -20,17 +20,27 @@
     font-size: 14px;
 }
 
-@media (max-width: 652px) {
+/* *****\ ♦ Responsive design ♦ \***** */
+@media (max-width: 672px) {
     .tag {
-        display: flex;
         border-radius: 5px;
         min-width: 77px;
         height: 18px;
-        padding: 0 10px;
+        padding: 0 5px;
         margin-right: 10px;
         margin-top: 10px;
     }
 
+    .tag-content {
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: auto;
+    }
+}
+
+@media (max-width: 478px) {
     .tag-content {
         width: 87px;
         font-size: 10px;
