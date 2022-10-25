@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 375px) {
     .background-banner {
-        content: url("../images/M_Home.png");
+        content: url("../images/M_Home.webp");
     }
 }
 

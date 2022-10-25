@@ -1,27 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Loader from './components/Loader'
 import Home from "./pages/Home"
 import About from './pages/About'
-import FicheItem from './pages/FicheItem'
+import FicheLogement from './pages/FicheLogement'
 import Error from './pages/Error'
-import Header from './components/Header'
+import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
 // ==============================================================
 
 const App = () => {
-  return (
+
+  const [loader, setLoader] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoader(false)
+
+    }, 3000)
+
+  }, [])
+
+  return loader ? (<Loader />
+  ) : (
     <BrowserRouter>
-      <Header />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="About" element={<About />} />
-        <Route path="FicheItem/:id" element={<FicheItem />} />
+        <Route path="FicheLogement/:id" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
-  );
-};
+  )
+}
 
 export default App

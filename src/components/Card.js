@@ -6,7 +6,7 @@ import '../styles/Card.css'
 
 const Card = ({ logement }) => {
     return (
-        <NavLink to={`FicheItem/${logement.id}`}>
+        <NavLink to={`FicheLogement/${logement.id}`}>
             <li className='logement-item'>
                 <div className='gradient-overlay'>
                     <img className='card-cover' src={logement.cover} alt={"logement" + logement.title} />

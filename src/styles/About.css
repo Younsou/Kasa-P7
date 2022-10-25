@@ -57,7 +57,7 @@
 /*******************************************************************************/
 @media (max-width: 375px) {
     .banner-img {
-        content: url("../images/M_About.png");
+        content: url("../images/M_About.webp");
     }
 }
 

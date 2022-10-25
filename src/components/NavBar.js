@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import LOGO_Red from '../images/LOGO_Red.svg'
-import '../styles/Header.css'
+import LogoRed from '../images/LOGO_Red.svg'
+import '../styles/NavBar.css'
 
 // ==============================================================
 
-function Navigation() {
+function NavBar() {
     return (
         <div className='Header'>
-            <img src={LOGO_Red} alt='logo' className='logo' />
+            <img src={LogoRed} alt='logo' className='logo' />
             <nav>
                 <ul className='menu'>
                     <NavLink to="/">
@@ -23,4 +23,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default NavBar

@@ -7,13 +7,13 @@ import '../styles/animation.css'
 
 const Loader = () => {
     return (
-        <div class="loader">
+        <div className="loader">
             <img src={LetterK} alt='letter logo' className="letter" />
             <img src={HouseSvg} alt='letter logo' className="letter" />
             <img src={LetterS} alt='letter logo' className="letter" />
             <img src={LetterA} alt='letter logo' className="letter" />
         </div>
-    );
-};
+    )
+}
 
-export default Loader;
+export default Loader

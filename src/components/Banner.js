@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Banner.css'
-import Background from '../images/Background_Home.png'
+import Background from '../images/Background_Home.webp'
 
 // ==============================================================
 

@@ -7,11 +7,11 @@ import Tag from "../components/Tag"
 import Avatar from "../components/Avatar"
 import { ReactComponent as Stars } from '../images/star_Grey.svg'
 import Collapse from "../components/Collapse"
-import '../styles/FicheItem.css'
+import '../styles/FicheLogement.css'
 
 // ==============================================================
 
-function FicheItem() {
+function FicheLogement() {
     const [logement, setLogement] = useState({ tags: [], equipments: [], pictures: [], rating: '', host: { 'name': '', 'picture': '' } })
     const { id } = useParams()
 
@@ -77,4 +77,4 @@ function FicheItem() {
     )
 }
 
-export default FicheItem
+export default FicheLogement

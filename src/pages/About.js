@@ -1,6 +1,6 @@
 import React from 'react'
 import { CollapseLarge } from "../components/Collapse"
-import BackgroundAbout from '../images/D_About.png'
+import BackgroundAbout from '../images/D_About.webp'
 import '../styles/About.css'
 
 // ==============================================================

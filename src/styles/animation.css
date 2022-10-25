@@ -5,15 +5,67 @@
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-color: #353535;
+    margin-right: 5px;
+    background-color: rgb(60, 60, 60);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     cursor: wait;
-
     opacity: 1;
-    -webkit-animation: anim ease-out 0.8s forwards 2.8s;
-    animation: anim ease-out 0.8s forwards 2.8s;
+    -webkit-animation: anim ease-out 0.8s forwards 2.5s;
+    -moz-animation: anim ease-out 0.8s forwards 2.5s;
+    -o-animation: anim ease-out 0.8s forwards 2.5s;
+    -ms-animation: anim ease-out 0.8s forwards 2.5s;
+    animation: anim ease-out 0.8s forwards 2.5s;
+
+}
+
+@-webkit-keyframes anim {
+    0% {
+        margin-bottom: 900px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 80px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes anim {
+    0% {
+        margin-bottom: 900px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 80px;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes anim {
+    0% {
+        margin-bottom: 900px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 80px;
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes anim {
+    0% {
+        margin-bottom: 900px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 80px;
+        opacity: 0;
+    }
 }
 
 @keyframes anim {
@@ -71,11 +123,11 @@
 }
 
 
-/************************** ANIMATION DU LOADER **************************/
+/************************** ANIMATION page A Propos **************************/
 
 .about__page .collapse {
 
-    animation-duration: 1500ms;
+    animation-duration: 1200ms;
     animation-delay: 5ms;
     animation-name: glissement;
 }
@@ -90,4 +142,27 @@
         margin-left: 0%;
         opacity: 1;
     }
+}
+
+/*====================================================================*/
+
+@media screen and (max-width: 928px) {
+    .loader img {
+        width: 85px;
+        height: 85px;
+        margin-left: 7.22px;
+        margin-bottom: 180px;
+    }
+
+    .letter:nth-child(1) {
+        width: 110.5px;
+        height: 110.5px;
+    }
+
+    .letter:nth-child(2) {
+        width: 93px;
+        height: 93px;
+        margin-bottom: 170px;
+    }
+
 }
