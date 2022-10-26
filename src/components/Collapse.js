@@ -12,17 +12,20 @@ function Collapse(props) {
 
     const content = useRef(null)
 
+
+    // Afin de pouvoir utilisé le composant selon les tailles differentes (CSS) des pages 'Fiche Logement ' et 'A Propos':
     const { size } = props
     const className = size === 'large' ? 'about__page' : 'logement-page'
+
 
     const togglecollapse = () => {
         setActiveState(setActive === "" ? "active" : "")
         setHeightState(
             setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
-        );
+        )
         setRotateState(
             setActive === "active" ? "collapse-icon" : "collapse-icon rotate"
-        );
+        )
     }
 
     return (
