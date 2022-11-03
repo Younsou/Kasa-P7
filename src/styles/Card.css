@@ -1,5 +1,5 @@
 .container_card {
-    margin-top: 310px;
+    margin-top: 43px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -181,11 +181,11 @@
 @media screen and (max-width: 672px) {
     .container_card {
         background: none;
-        margin-top: 112px;
+        margin-top: 22px;
     }
 
     .box_card {
-        padding: 22px 0px 40px 0px;
+        padding: 0px 0px 40px 0px;
     }
 
     .gradient-overlay {

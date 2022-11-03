@@ -50,8 +50,9 @@
     background-color: #f3f3f3;
     overflow: auto;
     transition: 0.6s ease;
-    margin-top: -15px;
+    margin-top: -10px;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 /* STYLE TEXT */
@@ -61,7 +62,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 142.6%;
-    padding: 45px 12px 27px 20px;
+    padding: 40px 12px 27px 20px;
 }
 
 .collapse-text ul {
@@ -76,12 +77,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 31px;
 }
 
 .about__page .collapse {
     width: 91%;
     height: 47px;
+
 }
 
 .about__page .collapse-title {
@@ -90,11 +91,12 @@
 
 .about__page .collapse-content {
     width: 91%;
+
 }
 
 .about__page .collapse-text {
     font-size: 24px;
-    padding: 41px 27px 19px 18px;
+    padding: 37px 27px 19px 18px;
 }
 
 .about__page .collapse-icon {
@@ -105,7 +107,6 @@
 /*******************************************************************************/
 @media (max-width: 1238px) {
     .logement-page {
-        margin-bottom: 31px;
         width: 100%;
     }
 
@@ -115,14 +116,21 @@
         transition: 0.6s ease;
         border-radius: 5px;
     }
+
+    .logement-page .collapse-content {
+        margin-bottom: 34px;
+    }
 }
 
 /*******************************************************************************/
 @media (max-width: 478px) {
 
-    .logement-page,
-    .about__page {
-        margin-bottom: 20px;
+    .logement-page .collapse-content {
+        margin-bottom: 29px;
+    }
+
+    .about__page .collapse-content {
+        margin-bottom: 30px;
     }
 
     .about__page .collapse,
@@ -136,10 +144,14 @@
         font-size: 13px;
     }
 
-    .about__page .collapse-text,
+    .about__page .collapse-text {
+        font-size: 12px;
+        padding: 27.02px 6.91px 52.58px 11.51px;
+    }
+
     .collapse-text {
         font-size: 12px;
-        padding: 28.02px 6.91px 3.5px 11.51px;
+        padding: 27.02px 6.91px 3.5px 11.51px;
     }
 
     /* STYLE CHEVRON */
@@ -147,6 +159,5 @@
     .collapse-icon {
         width: 15.2px;
         height: 8.96px;
-
     }
 }

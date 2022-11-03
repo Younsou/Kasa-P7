@@ -1,12 +1,12 @@
 .banner {
     display: flex;
     justify-content: center;
+    margin-top: 63px;
 }
 
 .background-banner {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    top: 171px;
     max-width: 95%;
     height: 223px;
     border-radius: 25px;
@@ -33,10 +33,13 @@
 
 @media screen and (max-width: 672px) {
 
+    .banner {
+        margin-top: 16px;
+    }
+
     .background-banner {
         max-width: 90%;
         height: 111px;
-        top: 83px;
         border-radius: 10px;
     }
 
@@ -58,14 +61,14 @@
 
 @media screen and (max-width: 350px) {
     .background-banner {
-        top: 145px;
+        margin-top: 34px;
     }
 
     .background-opacity {
-        top: 145px;
+        margin-top: 34px;
     }
 
     .title-banner {
-        top: 165px;
+        margin-top: 78px;
     }
 }
